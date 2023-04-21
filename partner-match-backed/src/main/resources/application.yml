@@ -1,0 +1,39 @@
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+#  数据库
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: study_test
+#    password: 123456
+#    url: jdbc:mysql://localhost:3306/yupao
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: partner_match
+    password: 123456Li
+    url: jdbc:mysql://rm-cn-wwo368q7a000yalo.rwlb.rds.aliyuncs.com:3306/study
+  #整合knife4j配置
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  #redis配置
+  redis:
+    port: 6379
+    host: localhost
+    database: 0
+    password: 123456
+  #配置session
+  session:
+    #超时(分钟)
+    timeout: 2000
+    store-type: redis
+
+#logging:
+#  level:
+#    com.gdut.mapper: DEBUG

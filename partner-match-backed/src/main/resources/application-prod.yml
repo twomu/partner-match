@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: partner_match
+    password: 123456Li
+    url: jdbc:mysql://rm-cn-wwo368q7a000yalo.rwlb.rds.aliyuncs.com:3306/study
+server:
+  port: 8085
